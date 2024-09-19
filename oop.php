@@ -1,10 +1,11 @@
 <?php
 
-class Trader{
+class Trader{ 
 private $winrate;
 private $profit;
 private $numberOFlosses;
 private $numberOFwins;
+public static $trader =13;
 public function takeSellTrade(){
     echo "the sell trade took its place";
 }
@@ -16,6 +17,9 @@ public function getWinrate(){
 }
 public function setWinrate($value){
     $this->winrate=$value;
+}
+public function getTrader(){
+    return Trader::$trader;
 }
 
 
